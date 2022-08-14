@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dad Jokes</title>
+</head>
+<body>
+        
+  <!--=============== REMIX ICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <br>
+    <div class="card">
+      <div class="card-body">
+        <h1 style="text-align: center;">Random Dad Joke Generator</h1>      
+        <h2 style="text-align: center;">Uses <a href="https://icanhazdadjoke.com/api">icanhazdadjoke API</a></h2>
+  
+      </div>
+    </div>
+    <header class="profile container">
+      <div class="profile__container grid">
+          <div class="profile__data">
+              <div class="profile__border">
+                  <div class="profile__perfil">
+                      <a href="https://atitbimali.com.np/">
+                      <img src="{% static 'images/boy.png' %}" alt="">
+                  </div>
+              </div>
+
+              <h2 class="profile__name">Atit Bimali</h2>
+              <h3 class="profile__profession">Have a Look at My Portfolio By clicking Here.</h3>  </div></div></header></a> 
+    <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Random Dad Joke</h5>
+              <p class="card-text">{{joke}}</p>
+              <form method="get">
+                <input type="submit" class="btn btn-primary col-sm-6" value="Generate Joke" name="dadjokes">
+               </form>
+            </div>
+          </div>
+        </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Random Chuck Norris Joke</h5>
+            <p class="card-text">{{value}}</p>
+            <form method="get">
+              <input type="submit" class="btn btn-danger col-sm-6" value="Generate Joke" name="norris">
+             </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
