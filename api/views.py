@@ -1,6 +1,5 @@
 from django.shortcuts import render
 import requests
-from tomlkit import value
 # Create your views here.
 def jokes(request):
     if(request.GET.get('dadjokes')):
